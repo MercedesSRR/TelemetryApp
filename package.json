@@ -1,0 +1,23 @@
+{
+  "name": "telemetryapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fusion": "^1.0.0-beta",
+    "jscharting": "^3.4.0",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.47",
+    "vue-google-charts": "^1.1.0",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "jscharting-vue": "^2.4.0",
+    "vite": "^4.1.4"
+  }
+}
