@@ -1,29 +1,29 @@
-# TelemetryApp
+# PG23 T4 Cloud Computing  - Cloud Prepped ***
+---------------------------------------
+<Author: Mercedes Senties>
+<Date: March 15th>
 
-This template should help get you started developing with Vue 3 in Vite.
+<Description: Telemetry App using Vue and Axios>
 
-## Recommended IDE Setup
+[demo] (https://github.com/MercedesSRR/TelemetryApp)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
+# Download/Install
+---------------------------------------
+Open the project on VS Code and run on the terminal by typing:
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
 
+# *** How to use ***
+---------------------------------------
+<Instructions: navigate to the charts window to see the different types of charts displayed>
+
+# Caveats (optional)
+---------------------------------------
+
+If app doesn't run, you might want to double check npm is already installed by typing on the terminal:
 ```sh
-npm run build
+npm install
 ```
