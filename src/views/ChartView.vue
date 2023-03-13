@@ -1,15 +1,17 @@
+<script setup>
+import BodyChartArea from '../components/BodyChartArea.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is a chart page</h1>
-  </div>
+  <main>
+    <BodyChartArea />
+  </main>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
+  main {
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
-}
 </style>

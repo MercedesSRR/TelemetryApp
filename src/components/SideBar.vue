@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="title">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="message">{{ msg }}</h1>
   </div>
 </template>
 
@@ -23,19 +23,8 @@ h3 {
   font-size: 1.2rem;
 }
 
-.green {
-  font-family: "Mynerve", sans-serif;
-}
-
 .title h1,
 .title h3 {
-  text-align: left;
-}
-
-@media (min-width: 1024px) {
-  .title h1,
-  .title h3 {
-    text-align: left;
-  }
+  text-align: center;
 }
 </style>

@@ -1,10 +1,10 @@
+<!--Body Area of chart window-->
+
 <script setup>
 import ChartItem from './ChartItem.vue'
 import ScatterChart from './charts/ScatterChart.vue'
 import BarChart from './charts/BarChart.vue'
 import PieChart from './charts/PieChart.vue'
-
-
 </script>
 
 <template>
@@ -28,4 +28,26 @@ import PieChart from './charts/PieChart.vue'
       <ScatterChart />
     </template>
   </ChartItem>
+
+  <ChartItem>
+    <template #heading>Scatter Chart</template>
+    <template v-slot:chartSlot>
+      <ScatterChart />
+    </template>
+  </ChartItem>
+
+  <ChartItem>
+    <template #heading>Bar Chart</template>
+    <template #chartSlot>
+      <BarChart />
+    </template>
+  </ChartItem>
+  
+  <ChartItem>
+    <template #heading>Pie Chart</template>
+    <template v-slot:chartSlot>
+      <PieChart />
+    </template>
+  </ChartItem>
+  
 </template>

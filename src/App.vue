@@ -5,16 +5,14 @@ import SideBar from './components/SideBar.vue'
 
 <template>
   <header>
-
     <div class="wrapper">
       <img src="./assets/Images/Walrus.png" width="100" height="90">
       <SideBar msg="Fishy Business" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/charts">Charts</RouterLink>
       </nav>
+      <!-- <footer class="footer">Mercedes Senties 2023, All Rights Reserved</footer> -->
     </div>
   </header>
 
@@ -30,6 +28,13 @@ header {
   background-color: #f85454;
 }
 
+/* .footer {
+  color: antiquewhite;
+  height: fit-content;
+  text-align: center;
+  font-size: medium;
+} */
+
 .wrapper {
   padding: 20px;
   text-align: center;
@@ -44,43 +49,12 @@ nav {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  text-align: center;
   margin-top: 2rem;
+  text-align: left;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+nav :hover {
+  background-color: #bb1d1d;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>

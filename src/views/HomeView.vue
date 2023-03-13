@@ -1,17 +1,15 @@
-<script setup>
-import BodyChartArea from '../components/BodyChartArea.vue'
-</script>
-
 <template>
-  <main>
-    <BodyChartArea />
-  </main>
+  <div class="welcome">
+    <h1>Welcome to the Telemetry App</h1>
+    <body>In this app you'll be able to see the automatic measurement and wireless transmission of data from remote sources. Specifically from our VFS games</body>
+  </div>
 </template>
 
 <style>
-  main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-  }
+.welcome {
+  text-align: center;
+  align-content: center;
+  padding: 200px;
+}
 </style>
+
