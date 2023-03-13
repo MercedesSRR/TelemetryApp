@@ -13,5 +13,8 @@ import BodyChartArea from '../components/BodyChartArea.vue'
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-content: center;
+    column-gap: 0px;
+    row-gap: 30px;
   }
 </style>

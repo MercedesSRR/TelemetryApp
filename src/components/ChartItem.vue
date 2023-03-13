@@ -11,6 +11,8 @@
 
 <style scoped>
 .chartArea {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-color: black;
   height: fit-content;
