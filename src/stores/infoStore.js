@@ -13,7 +13,7 @@ export const useInfoStore = defineStore('info', {
     }),
 
     getters: {
-        name: state => { return "Roller Crashers" },
+        name: state => { return "Final Project" },
         version: state => {
 
             const month = state.today.getUTCMonth() + 1;  // Jan = 0

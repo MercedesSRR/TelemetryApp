@@ -3,9 +3,10 @@
 <script lang="ts">
 
     import { defineComponent, h } from 'vue';
-
     import { GChart } from 'vue-google-charts';
+    import { useTelemetryStore } from '../../stores/telemetryStore.js';
 
+    const telemetryStore = useTelemetryStore();
     export const type = 'ColumnChart';
 
     export const data = [
