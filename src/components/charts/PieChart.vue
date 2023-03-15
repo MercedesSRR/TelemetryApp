@@ -7,10 +7,10 @@
 
     export const data = [
         ['Task', 'Hours per Day'],
-        ['Work', 11],
-        ['Eat', 2],
+        ['Work', 8],
+        ['Eat', 3],
         ['Commute', 2],
-        ['Watch TV', 2],
+        ['Watch TV', 4],
         ['Sleep', 7],
     ];
 

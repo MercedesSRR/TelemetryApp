@@ -4,26 +4,27 @@
 
     import { GChart } from 'vue-google-charts';
 
-    export const type = 'BarChart';
+    export const type = 'ColumnChart';
 
     export const data = [
-        ['City', '2010 Population', '2000 Population'],
-        ['New York City, NY', 8175000, 8008000],
-        ['Los Angeles, CA', 3792000, 3694000],
-        ['Chicago, IL', 2695000, 2896000],
-        ['Houston, TX', 2099000, 1953000],
-        ['Philadelphia, PA', 1526000, 1517000],
+        ['Year', 'Billions'],
+        ['2017', 2.33],
+        ['2018', 2.49],
+        ['2019', 2.64],
+        ['2020', 2.81],
+        ['2021', 2.96],
+        ['2022', 3.09],
+        ['2023', 3.22],
     ];
 
     export const options = {
-        title: 'Population of Largest U.S. Cities',
-        chartArea: { width: '50%' },
+        title: 'Number of Videogamers in the World',
+        legend: 'none',
         hAxis: {
-            title: 'Total Population',
-            minValue: 0,
+            title: 'Year',
         },
         vAxis: {
-            title: 'City',
+            title: 'Billions',
         },
         colors: ['#111691', '#299111'],
         width: 400,

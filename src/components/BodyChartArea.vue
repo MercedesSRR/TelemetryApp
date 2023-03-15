@@ -3,7 +3,7 @@
 <script setup>
 import ChartItem from './ChartItem.vue'
 import ScatterChart from './charts/ScatterChart.vue'
-import BarChart from './charts/BarChart.vue'
+import ColumnChart from './charts/ColumnChart.vue'
 import PieChart from './charts/PieChart.vue'
 import LineChart from './charts/LineChart.vue'
 import HistogramChart from './charts/HistogramChart.vue'
@@ -12,9 +12,9 @@ import ComboChart from './charts/ComboChart.vue'
 
 <template>
   <ChartItem>
-    <template #heading>Bar Chart</template>
+    <template #heading>Column Chart</template>
     <template #chartSlot>
-      <BarChart />
+      <ColumnChart />
     </template>
   </ChartItem>
   
