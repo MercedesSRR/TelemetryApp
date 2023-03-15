@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2023. Mercedes Senties, All Rights Reserved -->
+
 <template>
   <div class="chartArea">
     <div class= "details">

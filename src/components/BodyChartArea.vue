@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2023. Mercedes Senties, All Rights Reserved -->
+
 <!--Body Area of chart window-->
 
 <script setup>

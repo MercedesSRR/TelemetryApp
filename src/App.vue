@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2023. Mercedes Senties, All Rights Reserved -->
+
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import SideBar from './components/SideBar.vue'
@@ -12,7 +14,6 @@ import SideBar from './components/SideBar.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/charts">Charts</RouterLink>
       </nav>
-      <!-- <footer class="footer">Mercedes Senties 2023, All Rights Reserved</footer> -->
     </div>
   </header>
 
@@ -27,13 +28,6 @@ header {
   max-height: 100vh;
   background-color: #f85454;
 }
-
-/* .footer {
-  color: antiquewhite;
-  height: fit-content;
-  text-align: center;
-  font-size: medium;
-} */
 
 .wrapper {
   padding: 20px;

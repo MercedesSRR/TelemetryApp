@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2023. Mercedes Senties, All Rights Reserved -->
+
 <script lang="ts">
 
     import { defineComponent, h } from 'vue';
