@@ -25,6 +25,7 @@
         vAxis: {
             title: 'City',
         },
+        colors: ['#111691', '#299111'],
         width: 400,
         height: 200,
     };

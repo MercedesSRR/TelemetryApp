@@ -16,13 +16,13 @@
   border-style: solid;
   border-color: black;
   height: fit-content;
-  margin: 12px;
+  width: fit-content;
 }
 
 .details {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   align-items: center;
 }
 
