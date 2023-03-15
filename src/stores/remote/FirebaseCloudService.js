@@ -4,7 +4,7 @@ import CloudService from "./CloudService";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -29,7 +29,7 @@ export class FirebaseCloudService extends CloudService{
 
         this.app = {}
         this.analytics = {}
-        this.db = {}
+        this.firestore = {}
     }
     
     
@@ -38,15 +38,47 @@ export class FirebaseCloudService extends CloudService{
         // Initialize Firebase
         this.app = initializeApp(this.#_firebaseConfig);
         this.analytics = getAnalytics(this.app);
-        this.db = getFirestore(this.app)
+        this.firestore = getFirestore(this.app)
     }
 
     save() {
         //override to support CloudService save of record/struct
     }
 
-    load() {
+    async loadAsync() {
         //overload to upload a single record back to the service
+        const myCollection = collection(this.firestore, "telemetryData");
+        const query = await getDocs(myCollection);
+        query.forEach( doc => {
+
+            return doc.data()   //return won't work
+        });
+    }
+
+    fetchThen() {
+
+        return new Promise((resolve, reject) => {
+            collection(this.firestore, "telemetryData")
+            .then( myCollection => {
+                
+                getDocs(myCollection)
+                    .then( query => {
+
+                        query.forEach( doc => {
+
+                            resolve( doc.data() ) //return won't work
+                        })                
+                    })
+                    .catch( error => { 
+                        console.log('GetDocs failed');
+                        reject( error )
+                    })
+            })
+            .catch( error => { 
+                console.log('collection retrieval failed');
+                reject( error )
+            })
+        })
     }
 
     loadAll() {

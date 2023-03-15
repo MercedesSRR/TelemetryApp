@@ -9,6 +9,8 @@
     const telemetryStore = useTelemetryStore();
     export const type = 'ColumnChart';
 
+    let count = telemetryStore.recordCount;
+
     export const data = [
         ['Year', 'Billions'],
         ['2017', 2.33],
@@ -33,6 +35,12 @@
         width: 400,
         height: 200,
     };
+
+    //telemetryStore.fetch()
+        // .then( status => {
+        //     //alert the user? go get the data from the store?
+        //     //fill in a form?
+        // })
 
     export default defineComponent({
         name: 'GoogleChart',

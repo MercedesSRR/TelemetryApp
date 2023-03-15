@@ -54,7 +54,19 @@ export const useTelemetryStore = defineStore('telemetryStore', {
         },
 
         fetch() {
-            //TODO: fetch all telemetry data from external source
+            //fetch all telemetry data from external source
+            return new Promise((resolve, reject) => {
+                cloud.fetchThen()
+                    .then( data => {
+                        this.recordList = data;
+                        resolve( true )
+                    })
+                    .catch( error => {
+                        console.log("Boom, fetch failed");
+                        reject()
+                    })
+            });
+                
         }
     }
 })
