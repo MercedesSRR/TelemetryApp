@@ -8,18 +8,16 @@
     export const type = 'PieChart';
 
     export const data = [
-        ['Task', 'Hours per Day'],
-        ['Work', 8],
-        ['Eat', 3],
-        ['Commute', 2],
-        ['Watch TV', 4],
-        ['Sleep', 7],
+        ['Type of fish', 'Stolen fish'],
+        ['Blue', 8],
+        ['Red', 3],
+        ['Yellow', 2],
     ];
 
     export const options = {
-        title: 'My Daily Activities',
-        width: 400,
-        height: 200,
+        title: 'Stolen fish',
+        width: 500,
+        height: 300,
     };
 
     export default defineComponent({

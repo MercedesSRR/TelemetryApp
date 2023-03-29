@@ -9,19 +9,25 @@
     export const type = 'LineChart';
 
     export const data = [
-        ['Year', 'Sales', 'Expenses'],
-        ['2004', 1000, 400],
-        ['2005', 1170, 460],
-        ['2006', 660, 1120],
-        ['2007', 1030, 540],
+        ['Game moment', 'Slaps'],
+        ['1', 20],
+        ['2', 15],
+        ['3', 60],
+        ['4', 13],
     ];
 
     export const options = {
-        title: 'Company Performance',
+        title: 'Slaps during the game',
         curveType: 'function',
-        legend: {position: 'bottom'},
-        width: 400,
-        height: 200, 
+        legend: {position: 'right'},
+        hAxis: {
+            title: 'Game minute',
+        },
+        vAxis: {
+            title: 'Amount',
+        },
+        width: 500,
+        height: 300, 
     };
 
     export default defineComponent({

@@ -12,28 +12,23 @@
     let count = telemetryStore.recordCount;
 
     export const data = [
-        ['Year', 'Billions'],
-        ['2017', 2.33],
-        ['2018', 2.49],
-        ['2019', 2.64],
-        ['2020', 2.81],
-        ['2021', 2.96],
-        ['2022', 3.09],
-        ['2023', 3.22],
+        ['Types of fish', 'Amount', { role: 'style' }],
+        ['Red', 8, '#f71f1b'],
+        ['Blue', 10, '#4287f5'],
+        ['Yellow', 4, '#f7c41b'],
     ];
 
     export const options = {
-        title: 'Number of Videogamers in the World',
+        title: 'Kinds of fish fished',
         legend: 'none',
         hAxis: {
-            title: 'Year',
+            title: 'Types of fish',
         },
         vAxis: {
-            title: 'Billions',
+            title: 'Amount',
         },
-        colors: ['#111691', '#299111'],
-        width: 400,
-        height: 200,
+        width: 500,
+        height: 300,
     };
 
     //telemetryStore.fetch()

@@ -33,8 +33,8 @@
         seriesType: 'bars',
         series: { 5: { type: 'line' } },
         colors: ['#111691', '#299111', '#f70cd0', '#f7280c', '#075e6e', '#f79d0c'],
-        width: 400,
-        height: 200,
+        width: 500,
+        height: 300,
     };
 
     export default defineComponent({
