@@ -3,14 +3,40 @@
 <!--Body Area of chart window-->
 
 <script setup>
-import ChartItem from './ChartItem.vue'
-import ColumnChart from './charts/ColumnChart.vue'
-import PieChart from './charts/PieChart.vue'
-import LineChart from './charts/LineChart.vue'
-import ComboChart from './charts/ComboChart.vue'
+  import ChartItem from './ChartItem.vue'
+  import ColumnChart from './charts/ColumnChart.vue'
+  import PieChart from './charts/PieChart.vue'
+  import LineChart from './charts/LineChart.vue'
+  import ComboChart from './charts/ComboChart.vue'
+  import Controller from '../../plugins/controller'
+
+  // class BodyChartArea extends Controller{
+
+  //   constructor(name, subComponentList = []) {
+  //     super( name, subComponentList )
+  //     this.vm = {
+  //       charts:[
+  //         { title: "Fishing", typeOfChart: ColumnChart},
+  //         { title: "Steals", typeOfChart: PieChart},
+  //         { title: "Slaps", typeOfChart: LineChart},
+  //         { title: "Heatmap", typeOfChart: ComboChart}
+  //       ]
+  //     }
+  //   }
+  // }
+
+  // export default new BodyChartArea('BodyChartArea')
+
 </script>
 
 <template>
+  <!-- <section v-for="(item, i) in charts" :key="i">
+    <ChartItem>
+      <template #heading>{{ item.title }}</template>
+      <template #chartSlot>{{ item.typeOfChart }}</template>
+    </ChartItem>
+  </section> -->
+
   <ChartItem>
     <template #heading>Fishing</template>
     <template #chartSlot>
