@@ -30,6 +30,8 @@ export class FirebaseCloudService extends CloudService{
         this.app = {}
         this.analytics = {}
         this.firestore = {}
+        this.loading = false
+        this.documents = []
     }
     
     
@@ -81,7 +83,22 @@ export class FirebaseCloudService extends CloudService{
         })
     }
 
-    loadAll() {
+    async loadAll() {
         //overload to use the CloudService to fetch a list of things
+        this.documents = [];
+        this.loading = true;
+        const q = query(collection(this.firestore, "telemetryData"));
+        try {
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((doc) => {
+                this.documents.push({
+                    ...doc.data(),
+                });
+            });
+        } catch (error) {
+            console.log(error);
+        } finally {
+            this.loading = false;
+        }
     }
 }
