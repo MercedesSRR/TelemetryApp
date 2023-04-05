@@ -9,6 +9,8 @@
   import LineChart from './charts/LineChart.vue'
   import ComboChart from './charts/ComboChart.vue'
   import Controller from '../../plugins/controller'
+  import ScatterChart from './charts/ScatterChart.vue'
+  //import Heatmap from './charts/Heatmap.vue'
 
   // class BodyChartArea extends Controller{
 
@@ -61,7 +63,7 @@
   <ChartItem>
     <template #heading>Heatmap</template>
     <template v-slot:chartSlot>
-      <ComboChart />
+      <ScatterChart />
     </template>
   </ChartItem>
   

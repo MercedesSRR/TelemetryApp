@@ -8,24 +8,22 @@
     export const type = 'ScatterChart';
 
     export const data = [
-        ['Year', 'Sales', 'Expenses'],
-        ['2004', 1000, 400],
-        ['2005', 1170, 460],
-        ['2006', 660, 1120],
-        ['2008', 1030, 540],
-        ['2009', 1000, 400],
-        ['2010', 1170, 460],
-        ['2011', 660, 1120],
-        ['2012', 1030, 540],
+        ['y', 'x'],
+        [1000, 400],
+        [1170, 460],
+        [660, 1120],
+        [1030, 540],
+        [1000, 400],
+        [1170, 460],
+        [660, 1120],
+        [1030, 540],
     ];
 
     export const options = {
-        title: 'Company Performance',
         curveType: 'function',
-        legend: { position: 'bottom' },
         colors: ['#db520d', '#0d4bdb'],
-        width: 400,
-        height: 200,
+        width: 500,
+        height: 300,
     };
 
     export default defineComponent({

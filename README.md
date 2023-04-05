@@ -1,7 +1,7 @@
 # PG23 T4 Cloud Computing  - Cloud Prepped ***
 ---------------------------------------
 <Author: Mercedes Senties>
-<Date: March 29th>
+<Date: April 4th>
 
 <Description: Telemetry App using Vue and connected with Firebase cloud service>
 
@@ -10,6 +10,7 @@
 
 # Download/Install
 ---------------------------------------
+Download the A3 branch
 Open the project on VS Code and run on the terminal by typing:
 ```sh
 npm install pinia
@@ -30,3 +31,5 @@ If app doesn't run, you might want to double check npm is already installed by t
 ```sh
 npm install
 ```
+
+The "Ping it" button at the Home view doesn't work yet.

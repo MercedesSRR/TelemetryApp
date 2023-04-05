@@ -1,23 +1,15 @@
 <!-- Copyright (c) 2023. Mercedes Senties, All Rights Reserved -->
 
-<script>
+<script setup>
 
     import Controller from '../../plugins/controller'
+    import { useInfoStore } from '../stores/infoStore.js';
 
-    class HomeController extends Controller {
-
-        constructor( name, subComponentList = []) {
-            super( name, subComponentList );
-            this.vm = {
-                formData: {
-                    textData:"",
-                    numberData:42,
-                }
-            }
-        }
+    const infoStore = useInfoStore();
+    const formData = {
+      textData:"",
+      numberData:42,
     }
-
-    export default new HomeController('HomeView');
 
 </script>
 
@@ -36,6 +28,7 @@
                 <button value="Submit" class="">SUBMIT</button>
             </form>
     </div>
+    <button class="button" @click="infoStore.pingDataserver()">Ping it</button>
   </div>
 </template>
 
