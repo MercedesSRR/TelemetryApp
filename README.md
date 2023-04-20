@@ -1,7 +1,7 @@
 # PG23 T4 Cloud Computing  - Cloud Prepped ***
 ---------------------------------------
 <Author: Mercedes Senties>
-<Date: April 4th>
+<Date: April 19th>
 
 <Description: Telemetry App using Vue and connected with Firebase cloud service>
 
@@ -10,7 +10,7 @@
 
 # Download/Install
 ---------------------------------------
-Download the A3 branch
+Download the A4 branch
 Open the project on VS Code and run on the terminal by typing:
 ```sh
 npm install pinia
